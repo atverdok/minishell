@@ -14,7 +14,7 @@
 
 int				add_to_history(char ***history_buf, char *buf, int *i)
 {
-	if ((*history_buf)[29] != NULL)
+	if (*history_buf[29] != NULL)
 		ft_strdel(history_buf[29]);
 	ft_memmove(((*history_buf) + 1), (*history_buf), (29 * sizeof(char *)));
 	*history_buf[0] = buf;
